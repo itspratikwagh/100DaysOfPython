@@ -1,0 +1,16 @@
+print("Fake Fan Finder")
+FavAnime = input("What's your fav anime?")
+if FavAnime == "one piece":
+  FavChar = input("Oh really?! Name me any of the characters?")
+  if FavChar == "Nami":
+    favjob = input("You got that by pure chance. Okay then what is her job on the ship?")
+    if favjob=="Navigator":
+      firstbounty = input("What was her first bounty then?")
+    else:
+      print("Hahaha gocha!!")
+  else:
+    print("Hahaha gocha!!")
+else:
+  print("I don't know shit about it")
+    
+    
