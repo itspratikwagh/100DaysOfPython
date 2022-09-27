@@ -1,0 +1,6 @@
+myname=input("Whats your name?")
+myage=input("whats your age bitch?")
+print("Nice to meet you")
+print(myname)
+print("You look too young for your age of")
+print(myage)
