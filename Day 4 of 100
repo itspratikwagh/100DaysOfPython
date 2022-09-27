@@ -1,0 +1,15 @@
+print("Today you will read a","\033[31m","stupid story","\033[0m", "about your family")
+print("""You will be asked a few questions and 
+we will build the story just 
+FOR YOU BITCH""")
+print()
+name = input("what's your name?")
+DadName = input("what's your dad's name?")
+MomName = input("what's your mom's name?")
+print()
+print("It was the night of Sept 5 1988, when",DadName,"fucked",MomName,"and 9 months later,",name,"was born ugly as fuck. It was a mistake")
+print()
+car = input("What is your favorite car?")
+color = input("what color do you like?")
+print()
+print("18 years fast forward,",name,"bought a",color,"colored",car,"and scratched it on day 1! What an idiot!")
