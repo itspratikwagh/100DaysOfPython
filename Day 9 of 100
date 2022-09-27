@@ -1,0 +1,9 @@
+year= int(input("which year were you born?"))
+if year>=1883 and year<=1900:
+  print("Lost Generation")
+elif year>=1901 and year<=1927:
+  print("Greatest Generation")
+elif year>=1928 and year<=1945:
+  print("Silent Generation")
+else:
+  print("Please go away")
