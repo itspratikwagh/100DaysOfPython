@@ -1,0 +1,6 @@
+food = input("what is you favorite food?")
+plant = input("Which plant do you like?")
+cooking = input("What is your favorite style of cooking?")
+tool = input("what is you favorite tool?")
+print("Menu")
+print(cooking,food,"with",plant,"with",tool)
