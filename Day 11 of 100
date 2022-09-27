@@ -1,0 +1,7 @@
+year=input("Is it a leap year?")
+if year=="no":
+  answer=60*60*24*365
+  print("The number of seconds is", answer)
+else:
+  answer=60*60*24*366
+  print("The number of seconds is", answer)
