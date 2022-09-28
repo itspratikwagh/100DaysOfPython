@@ -1,0 +1,25 @@
+print("Exam Grade Calculator")
+maxScore=int(input("Whats the max score?"))
+yourScore=int(input("What's your score?"))
+percent=yourScore/maxScore*100
+percent=round(percent,2)
+if percent>=90:
+  grade="A+"
+  print("You got",percent,"% which is a",grade)
+elif percent>=80:
+  grade="A-"
+  print("You got",percent,"% which is a",grade)
+elif percent>=70:
+  grade="B"
+  print("You got",percent,"% which is a",grade)
+elif percent>=60:
+  grade="C" 
+  print("You got",percent,"% which is a",grade)
+elif percent>=50:
+  grade="D"
+  print("You got",percent,"% which is a",grade)
+elif percent>=40:
+  grade="U"
+  print("You got",percent,"% which is a",grade)
+else:
+  print("You got",percent,"% which is a FAIL")
