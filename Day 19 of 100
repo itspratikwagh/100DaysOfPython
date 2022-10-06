@@ -1,0 +1,10 @@
+principle=float(input("How much amount did you borrow?  "))
+print()
+interest=0
+year=0
+for counter in range(10):
+  interest=principle*0.05
+  principle+=interest
+  year+=1
+  print("Your total owed amount for year",year, "is", round(principle,2))
+print("And you total interest paid over 10 years is", round(interest,2))
