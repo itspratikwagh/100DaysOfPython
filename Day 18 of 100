@@ -1,0 +1,21 @@
+correct=50
+attempts=0
+while True:
+  userentry=int(input("Guess how many times I jacked off>>"))
+  if userentry==50:
+    print("Bang Bang, you got it!")
+    attempts+=1
+    break
+  elif userentry>0 and userentry<50:
+    print("Too low")
+    attempts+=1
+    continue
+  elif userentry<0:
+    print("Dumbass you entered a negative number")
+    attempts+=1
+    exit()
+  else:
+    print("Too high")
+    attempts+=1
+    continue
+print("You guessed it in", attempts, "attempts")
