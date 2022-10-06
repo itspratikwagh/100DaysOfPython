@@ -1,0 +1,66 @@
+from getpass import getpass as input
+print("Most Epic 🪨📄✂️B attle")
+print()
+p1score = 0
+p2score = 0
+while True:
+  p1=input("Player 1, please choose R, S or P")
+  p2=input("Player 2, please choose R, S or P")
+  if p1=="R" and p2=="P":
+    print("Player 2 wins!!")
+    p2score+=1
+    if p1score==3 or p2score==3:
+      break
+    else:
+      continue
+  elif p1=="R" and p2=="S":
+    print("Player 1 wins!!")
+    p1score+=1
+    if p1score==3 or p2score==3:
+      break
+    else:
+      continue
+  elif p1=="P" and p2=="S":
+    print("Player 2 wins!!")
+    p2score+=1
+    if p1score==3 or p2score==3:
+      break
+    else:
+      continue
+  elif p1=="P" and p2=="R":
+    print("Player 1 wins this round!!")
+    p1score+=1
+    if p1score==3 or p2score==3:
+      break
+    else:
+      continue
+  elif p1=="S" and p2=="R":
+    print("Player 2 wins this round!!")
+    p2score+=1
+    if p1score==3 or p2score==3:
+      break
+    else:
+      continue
+  elif p1=="S" and p2=="P":
+    print("Player 1 wins this round!!")
+    p1score+=1
+    if p1score==3 or p2score==3:
+      break
+    else:
+      continue
+  elif p1==p2:
+    print("It's a TIE, try again!!")
+    if p1score==3 or p2score==3:
+      break
+    else:
+      continue
+  else:
+    print("Try again")
+    if p1score==3 or p2score==3:
+      break
+    else:
+      continue
+if p1score==3:
+  print("Player 1 wins 3 rounds")
+else:
+  print("Player 2 wins 3 rounds")
