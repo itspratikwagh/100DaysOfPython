@@ -1,0 +1,14 @@
+import random
+attempt=0
+while True:
+  myNumber = random.randint(1, 5)
+  ask=int(input("Guess the number: "))
+  attempt+=1
+  if ask==myNumber:
+    print("Bang Bang!")
+    break
+  elif ask<myNumber:
+    print("too low, try again")
+  else:
+    print("too high, try again")
+print("It took",attempt,"attempts to get it right")
