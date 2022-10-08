@@ -1,0 +1,9 @@
+import random
+def rollDice(para):
+  print("You rolled",random.randint(1,para))
+  print()
+userPara=int(input("How many sides? "))
+rollAgain="yes"
+while rollAgain=="yes":
+  rollDice(userPara)
+  rollAgain=input("Roll again? ")
