@@ -1,0 +1,14 @@
+print("Wagh Username and Password System")
+print()
+def userPass():
+  while True:
+    user=input("Username: ")
+    pas=input("Password: ")
+    if user=="David" and pas=="chutiya":
+      print("Welcome Chutiya")
+      break
+    else:
+      print("cannot recognize you fuckface, try again")
+      print()
+      continue
+userPass()
