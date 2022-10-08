@@ -1,0 +1,11 @@
+import random
+def rollDice():
+  roll6 = random.randint(1,6)
+  roll8 = random.randint(1,8)
+  return roll6*roll8
+playMore="yes"
+while playMore=="yes":
+  char=input("Name your Warrior: ")
+  health=str(rollDice())
+  print("Their health is",health,"hp")
+  playMore=input("Do you want to play more?")
