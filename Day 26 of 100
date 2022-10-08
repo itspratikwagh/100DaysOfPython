@@ -1,0 +1,15 @@
+from replit import audio
+import os, time
+
+def play():
+  source = audio.play_file('audio.wav')
+  source.paused = False
+while True:
+  os.system("clear")
+  print("Press 1 to play")
+  print("Press 2 to exit")
+  user_input=int(input(":"))
+  if user_input==1:
+    play()
+  else:
+    exit()
