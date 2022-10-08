@@ -1,0 +1,8 @@
+print("Please enter a start value, end value and increament for your list")
+print()
+s=int(input("Start at: "))
+e=int(input("End before: "))
+incr=int(input("Increment between values: "))
+print()
+for i in range(s,e,incr):
+  print(i)
