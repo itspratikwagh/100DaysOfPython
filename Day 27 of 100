@@ -1,0 +1,32 @@
+import random, os, time
+def rollDice():
+  roll6 = random.randint(1,6)
+  roll12 = random.randint(1,12)
+  return (roll6*roll12/2)+10
+def play():
+  print("Character Builder")
+  print()
+  charname=input("Name Your Legend: ")
+  print()
+  chartype=input("Character Type (Human, Elf, Wizard, Orc): ")
+  print()
+  health=str(rollDice())
+  strength=str(rollDice()+2)
+  print(charname, "\nHEALTH: ",health, "\nSTRENGTH: ", strength)
+  time.sleep(5)
+print("Press 1 to play")
+print("Press 2 to exit")
+user_input=int(input(":"))
+if user_input==1:
+  play()
+else:
+  exit()
+while True:
+  os.system("clear")
+  print("Press 1 to play again")
+  print("Press 2 to exit")
+  user_input=int(input(":"))
+  if user_input==1:
+    play()
+  else:
+    exit()
